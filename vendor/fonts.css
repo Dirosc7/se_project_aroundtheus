@@ -1,20 +1,62 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   src: url(../vendor/fonts/Inter-Medium.woff2);
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   src: url(../vendor/fonts/Inter-Medium.woff2);
   font-style: normal;
   font-weight: 900;
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   src: url(../vendor/fonts/Inter-Medium.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter", Arial, sans-serif;
+  src: url(../vendor/fonts/Inter-Regular.woff2);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter", Arial, sans-serif;
+  src: url(../vendor/fonts/Inter-Regular.woff2);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter", Arial, sans-serif;
+  src: url(../vendor/fonts/Inter-Regular.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter", Arial, sans-serif;
+  src: url(../vendor/fonts/Inter-Black.woff2);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter", Arial, sans-serif;
+  src: url(../vendor/fonts/Inter-Black.woff2);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter", Arial, sans-serif;
+  src: url(../vendor/fonts/Inter-Black.woff2);
   font-style: normal;
   font-weight: 400;
 }
