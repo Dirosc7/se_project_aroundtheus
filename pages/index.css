@@ -1,0 +1,21 @@
+@import url(../vendor/normalize.css);
+
+@import url(../vendor/fonts.css);
+
+@import url(../blocks/page.css);
+
+@import url(../blocks/header.css);
+
+@import url(../blocks/profile.css);
+
+@import url(../blocks/cards.css);
+
+@import url(../blocks/footer.css);
+
+@import url(../blocks/maxwidth480.css);
+
+@import url(../blocks/maxwidth545.css);
+
+@import url(../blocks/maxwidth768.css);
+
+@import url(../blocks/maxwidth1022.css);
