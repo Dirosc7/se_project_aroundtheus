@@ -1,0 +1,63 @@
+@media screen and (max-width: 1022px) and (min-width: 769px) {
+  .header {
+    position: relative;
+    padding-left: 5vw;
+  }
+
+  .profile {
+    display: flex;
+    padding-top: 40px;
+    margin: 0;
+  }
+
+  .profile__info {
+    display: grid;
+    grid-template-areas: "title button" "description description";
+    grid-template-columns: minmax(auto, 373px) auto;
+  }
+
+  .profile__avatar {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .profile__title {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .profile__edit-button {
+    height: 18px;
+    width: 18px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+  }
+
+  .profile__description {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .profile__add-button {
+    width: 150px;
+    height: 50px;
+    border: 2px #ffffff solid;
+    border-radius: 2px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer {
+    padding-left: 5vw;
+  }
+}
