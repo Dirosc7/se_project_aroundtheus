@@ -26,11 +26,9 @@
   grid-area: title;
   margin: 0;
   font-family: "Inter";
-  font-style: normal;
-  align-self: left;
+  align-self: last baseline;
   color: #ffffff;
   padding-right: 18px;
-  align-self: last baseline;
 }
 
 .profile__description {
