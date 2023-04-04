@@ -1,4 +1,4 @@
-.cards {
+.card {
   padding: 0;
 }
 
@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-.card {
+.card__block {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -36,7 +36,7 @@
 }
 
 .card__text {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
   font-style: normal;
@@ -63,4 +63,40 @@
 
 .card__like-button:hover {
   opacity: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card__description {
+    max-width: 282px;
+  }
+}
+
+@media screen and (max-width: 545px) and (min-width: 481px) {
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 546px) {
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1022px) and (min-width: 769px) {
+  .card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

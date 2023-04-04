@@ -8,3 +8,28 @@
 .header__logo {
   padding-bottom: 33%;
 }
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 545px) and (min-width: 481px) {
+  .header {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 546px) {
+  .header {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 1022px) and (min-width: 769px) {
+  .header {
+    position: relative;
+    padding-left: 5vw;
+  }
+}

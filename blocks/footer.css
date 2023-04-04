@@ -8,3 +8,27 @@
   padding-bottom: 60px;
   padding-top: 67px;
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 545px) and (min-width: 481px) {
+  .footer {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 546px) {
+  .footer {
+    padding-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 1022px) and (min-width: 769px) {
+  .footer {
+    padding-left: 5vw;
+  }
+}
