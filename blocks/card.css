@@ -52,7 +52,7 @@
   overflow: visible;
 }
 
-.card__like--button {
+.card__like-button {
   background: transparent url(../Images/Icons/white-heart.svg) center no-repeat;
   height: 18px;
   width: 21px;
@@ -61,7 +61,7 @@
   align-self: center;
 }
 
-.card__like--button:hover {
+.card__like-button:hover {
   opacity: 50%;
 }
 
