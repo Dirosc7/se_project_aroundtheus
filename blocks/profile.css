@@ -45,6 +45,10 @@
   font-family: Inter, Arial, sans-serif;
   font-style: normal;
   align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
 }
 
 .profile__edit-button {
@@ -126,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 725px) {
   .profile {
     flex-direction: column;
     padding-bottom: 32px;

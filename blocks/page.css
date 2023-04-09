@@ -3,13 +3,12 @@
   color: white;
   margin: 0;
   padding: 0;
-  min-width: 100%;
-  overflow-x: hidden;
+  min-width: 100vw;
+  border: 1px solid red;
 }
 
 .page__section {
   max-width: 880px;
-  width: 100%;
   position: relative;
   margin: 0 auto;
 }

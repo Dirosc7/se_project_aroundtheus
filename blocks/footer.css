@@ -1,7 +1,7 @@
 .footer {
   padding-bottom: 60px;
   padding-top: 67px;
-  margin: auto;
+  width: 100%;
 }
 
 .footer__text {
@@ -11,17 +11,17 @@
   font-weight: 400;
   font-style: normal;
   color: #545454;
-  margin: 0;
 }
 
 @media screen and (max-width: 1022px) {
   .footer {
-    padding-left: 5vw;
     padding-top: 48px;
+    margin: 0;
   }
 
   .footer__text {
     font-size: 16px;
     line-height: 1.2;
+    padding-left: 5vw;
   }
 }
