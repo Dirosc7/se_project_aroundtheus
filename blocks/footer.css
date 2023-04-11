@@ -11,12 +11,12 @@
   font-weight: 400;
   font-style: normal;
   color: #545454;
+  margin: 0;
 }
 
 @media screen and (max-width: 1022px) {
   .footer {
     padding-top: 48px;
-    margin: 0;
   }
 
   .footer__text {
