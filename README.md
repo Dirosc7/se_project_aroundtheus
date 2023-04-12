@@ -1,36 +1,31 @@
-1. Around the US
+Overview
 
-2. An interactive page where users can add and remove photos, like photos of other users, and make a few minor adjustments to their own profile.
+Description of the project and its functionality
+Features
+Technologies
+Figma
+Images
+Demo
+Description of the project and its functionality
 
-3. :
-   Work with designs in a graphics editor called Figma
-   Create responsive websites using Grid Layout
-   Use media queries to set parameters for different screen sizes
-   Work with branches in Git
-   Create your own array of data
-   Add markup code for the modal window
-   Access and toggle the modal window
-   Add more functionality to the project with JavaScript
+A responsive website using HTML5, CSS3 (flexbox, grid, BEM), built following to design mokup in Figma. JavaScript is used to add functionality to Form Fields in a Popup Box and save the edited values. Used BEM methodology with a nested file structure. The project adapts to the width of various devices (from 320px to 1280px). The project is based on dynamically editing the profile information on popup modals and adding cards of places and image popups. Everything is rendering responsively adapting to different screen sizes.
 
-   A responsive web design project is a website or web application that is designed to be displayed on a variety of devices, including desktop computers, laptops, tablets, and smartphones. The design of the website or web application will change depending on the size of the device that it is being viewed on.
+Features
 
-Responsive web design is achieved by using a combination of HTML, CSS, and JavaScript. HTML is used to create the structure of the website or web application, CSS is used to style the website or web application, and JavaScript is used to add interactivity to the website or web application.
+Form Popup Modal: editing profile information, adding/deleting cards with images and titles unsing a link to photo and Forms are validated using javascript. Image popup for each card with Delete and Like button.
+Technologies
 
-There are many benefits to using responsive web design. One benefit is that it allows users to view the website or web application on a variety of devices. This is important because more and more people are using mobile devices to access the internet. Another benefit of responsive web design is that it can help to improve the user experience. When a website or web application is designed to be responsive, it will be easier for users to navigate and use on a variety of devices.
+Stack: HTML5, CSS3, flexbox, grid layout, BEM, Media queries, transition, JavaScript, DOM, Debugging Git, Figma, Form validation, OOP, Webpack
 
-There are a few things to keep in mind when creating a responsive web design project. One thing to keep in mind is that the design of the website or web application should be flexible enough to adapt to different screen sizes. Another thing to keep in mind is that the website or web application should be easy to use on a variety of devices.
+Figma
 
-Here is an example of a responsive web design project:
+The website was made up according to the Figma layout requirements:
 
-A company that sells shoes wants to create a website that can be viewed on a variety of devices. The company hires a web developer to create a responsive web design for their website. The web developer uses HTML, CSS, and JavaScript to create a website that is flexible enough to adapt to different screen sizes. The website is easy to use on a variety of devices, and the company is happy with the results.
+Link to the project in Figma - 1
+Link to the project in Figma - 2
+Link to the project in Figma - 3
+Images
 
-A to-do list is a simple but useful application that can be created using arrays in JavaScript. To create a to-do list, you will need to create an array of items that you want to keep track of. You can then use the array methods to add, remove, and update items in the list. You can also use the array methods to sort the list by priority or due date.
+Export images directly from Figma and optimize them here, so your project loads faster.
 
-4. Pictures, GIFs, or screenshots that detail the project features (highly recommended)
-   Project at 480px /Users/ElDoog/Documents/GitHub/se_project_aroundtheus-main/Images/screenshots of project/Project at 480.png
-
-   Project at 768px /Users/ElDoog/Documents/GitHub/se_project_aroundtheus-main/Images/screenshots of project/Project at 768.png
-
-   Project at 1280 /Users/ElDoog/Documents/GitHub/se_project_aroundtheus-main/Images/screenshots of project/Project at 1280.png
-
-5. The link to GitHub Pages - https://dirosc7.github.io/se_project_aroundtheus/
+The link to GitHub Pages - https://dirosc7.github.io/se_project_aroundtheus/
