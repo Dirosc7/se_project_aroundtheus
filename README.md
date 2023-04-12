@@ -2,7 +2,6 @@
 
 2. Description - An interactive page where users can add and remove photos, like photos of other users, and make a few minor adjustments to their own profile.
 
-3. Technologies and techniques used - Using Figma for design to implement my responsive page design that uses grid layout, flexbox, media queries, and GitHub for revision control. Now it is now using JavaScript to create arrays and objects to store data away from HTML.
    This part of the project had us:
    Create your own array of data
    Add markup code for the modal window
