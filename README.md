@@ -15,9 +15,9 @@ Features
 Form Popup Modal: editing profile information, adding/deleting cards with images and titles unsing a link to photo and Forms are validated using javascript. Image popup for each card with Delete and Like button.
 Technologies
 
-Stack: HTML5, CSS3, flexbox, grid layout, BEM, Media queries, transition, JavaScript, DOM, Debugging Git, Figma, Form validation, OOP, Webpack
+Stack: HTML5, CSS3, flexbox, grid layout, BEM, Media queries, transition, JavaScript,  Debugging Git, Figma, 
 
-Figma
+
 
 The website was made up according to the Figma layout requirements:
 
