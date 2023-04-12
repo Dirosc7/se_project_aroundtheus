@@ -24,13 +24,7 @@ Here is an example of a responsive web design project:
 
 A company that sells shoes wants to create a website that can be viewed on a variety of devices. The company hires a web developer to create a responsive web design for their website. The web developer uses HTML, CSS, and JavaScript to create a website that is flexible enough to adapt to different screen sizes. The website is easy to use on a variety of devices, and the company is happy with the results.
 
-Here is a list of some of the most popular responsive web design frameworks:
-
-Bootstrap
-Foundation
-Materialize
-Semantic UI
-Skeleton
+A to-do list is a simple but useful application that can be created using arrays in JavaScript. To create a to-do list, you will need to create an array of items that you want to keep track of. You can then use the array methods to add, remove, and update items in the list. You can also use the array methods to sort the list by priority or due date.
 
 4. Pictures, GIFs, or screenshots that detail the project features (highly recommended)
    Project at 480px /Users/ElDoog/Documents/GitHub/se_project_aroundtheus-main/Images/screenshots of project/Project at 480.png
