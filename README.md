@@ -1,6 +1,6 @@
 Around The U.S.
 
-Continuing to build functionality on the interactive "Around The U.S." page started in Project 4. Spanning several sprints, the page provides an interface where users can add, remove, or like photos. 
+Continuing to build functionality on the interactive "Around The U.S."  The page provides an interface where users can add, remove, or like photos. 
 
 Functionality and Technologies demonstrated
 
