@@ -39,4 +39,4 @@ Skeleton
 
    Project at 1280 /Users/ElDoog/Documents/GitHub/se_project_aroundtheus-main/Images/screenshots of project/Project at 1280.png
 
-Project at 5. The link to GitHub Pages - https://dirosc7.github.io/se_project_aroundtheus/
+5. The link to GitHub Pages - https://dirosc7.github.io/se_project_aroundtheus/
