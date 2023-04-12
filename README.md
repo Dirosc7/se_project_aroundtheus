@@ -11,7 +11,7 @@ Interactivity via JS
 JS Classes
 
 Links to pictures of website:
-https://dirosc7.github.io/se_project_aroundtheus/images/screenshots/
+https://dirosc7.github.io/se_project_aroundtheus/images/screenshots
 
 
 The link to GitHub Pages - https://dirosc7.github.io/se_project_aroundtheus/
