@@ -2,7 +2,8 @@
 
 2. Description - An interactive page where users can add and remove photos, like photos of other users, and make a few minor adjustments to their own profile.
 
-3. Work with designs in a graphics editor called Figma
+3. Description of the technology and techniques used:
+   Work with designs in a graphics editor called Figma
    Create responsive websites using Grid Layout
    Use media queries to set parameters for different screen sizes
    Work with branches in Git
