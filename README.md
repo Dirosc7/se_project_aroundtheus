@@ -3,6 +3,15 @@
 2. Description - An interactive page where users can add and remove photos, like photos of other users, and make a few minor adjustments to their own profile.
 
 3. Description of the technology and techniques used:
+   Work with designs in a graphics editor called Figma
+   Create responsive websites using Grid Layout
+   Use media queries to set parameters for different screen sizes
+   Work with branches in Git
+   Create your own array of data
+   Add markup code for the modal window
+   Access and toggle the modal window
+   Add more functionality to the project with JavaScript
+
    A responsive web design project is a website or web application that is designed to be displayed on a variety of devices, including desktop computers, laptops, tablets, and smartphones. The design of the website or web application will change depending on the size of the device that it is being viewed on.
 
 Responsive web design is achieved by using a combination of HTML, CSS, and JavaScript. HTML is used to create the structure of the website or web application, CSS is used to style the website or web application, and JavaScript is used to add interactivity to the website or web application.
