@@ -3,6 +3,11 @@
 2. Description - An interactive page where users can add and remove photos, like photos of other users, and make a few minor adjustments to their own profile.
 
 3. Technologies and techniques used - Using Figma for design to implement my responsive page design that uses grid, flexbox, and media queries is now using JavaScript to create arrays and objects to store data away from markup. This principle for working with data is fundamental when developing web services. First step was to add a script file to your project and create an array with the card data. The array consists of six objects, each having two fields: name and link. The name field should contain a string with a place name, and the link field should contain a URL to the picture of this place.
+   At least 6 cards have been created via JavaScript:
+   There is an array variable with initialCards name
+   Arrays contains object with only name and link fields
+   The name field contains a string with place name
+   The link field contains a string with URL to the picture of this place
 
 4. Pictures, GIFs, or screenshots that detail the project features (highly recommended)
    Project at 480px /Users/ElDoog/Documents/GitHub/se_project_aroundtheus-main/Images/screenshots of project/Project at 480.png
