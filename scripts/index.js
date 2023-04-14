@@ -1,4 +1,4 @@
-/*var initialCards = [
+const initialCards = [
   "object1",
   "object2",
   "object3",
@@ -36,7 +36,3 @@ let object6 = {
   name: "Lago di Braies",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
 };
-
-console.log(initialCards);
-
-/*
