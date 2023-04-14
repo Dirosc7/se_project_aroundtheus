@@ -1,12 +1,3 @@
-const initialCards = [
-  "object1",
-  "object2",
-  "object3",
-  "object4",
-  "object5",
-  "object6",
-];
-
 let object1 = {
   name: "Yosemite Valley",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
@@ -36,3 +27,7 @@ let object6 = {
   name: "Lago di Braies",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
 };
+
+const initialCards = [object1, object2, object3, object4, object5, object6];
+
+console.log(initialCards);
