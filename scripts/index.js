@@ -1,4 +1,4 @@
-const initialCards = [
+/*var initialCards = [
   "object1",
   "object2",
   "object3",
@@ -38,3 +38,5 @@ let object6 = {
 };
 
 console.log(initialCards);
+
+/*
