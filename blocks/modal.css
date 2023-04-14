@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal_opened {
+.modal__opened {
   display: flex;
 }
 
@@ -44,6 +44,7 @@
   right: -40px;
   height: 40px;
   width: 40px;
+  outline: none;
 }
 
 .modal__close:hover,
