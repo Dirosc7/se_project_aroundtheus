@@ -31,3 +31,23 @@ let object6 = {
 const initialCards = [object1, object2, object3, object4, object5, object6];
 
 console.log(initialCards);
+
+var modal = document.getElementById("editModal");
+
+var btn = document.getElementById("editButton");
+
+var span = document.getElementsByClassName("modal__close")[0];
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
