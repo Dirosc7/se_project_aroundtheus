@@ -10,10 +10,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal__opened {
-  display: flex;
-}
-
 .modal__container {
   background-color: #ffffff;
   margin: 195px auto;
@@ -51,6 +47,7 @@
 .modal__close:hover,
 .modal__close:focus {
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .modal__profile {
@@ -90,6 +87,10 @@
   margin-left: 36px;
   padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal__input:focus {
+  outline: none;
 }
 
 .modal__button {
