@@ -32,22 +32,19 @@ const initialCards = [object1, object2, object3, object4, object5, object6];
 
 console.log(initialCards);
 
-var modal = document.getElementById("editModal");
+const editButton = document.querySelector(".profile__edit-button");
+const modal = document.querySelector(".modal");
 
-var btn = document.getElementById("editButton");
-
-var span = document.getElementsByClassName("modal__close")[0];
-
-btn.onclick = function () {
-  modal.style.display = "block";
+const openModal = function () {
+  modal.classList.add("modal__open");
 };
 
-span.onclick = function () {
-  modal.style.display = "none";
+editButton.addEventListener("click", openModal);
+
+const closeButton = document.querySelector(".modal__close");
+
+const closeModal = function () {
+  modal.classList.remove("modal__open");
 };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+closeButton.addEventListener("click", closeModal);
