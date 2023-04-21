@@ -33,6 +33,10 @@
   padding-bottom: 20px;
 }
 
+.modal__open {
+  display: flex;
+}
+
 .modal__close {
   background: transparent url(../Images/Icons/Close-Icon-1.svg) center no-repeat;
   position: absolute;
