@@ -94,7 +94,6 @@
   .profile__avatar {
     margin: auto;
   }
-
   .profile__title {
     font-size: 32px;
     text-align: left;
@@ -137,6 +136,7 @@
   .profile__title {
     font-size: 22px;
     text-align: center;
+    min-width: 240px;
   }
 
   .profile__description {
