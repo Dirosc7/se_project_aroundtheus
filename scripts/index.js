@@ -1,31 +1,31 @@
 // ARRAY  //
 //        //
-let object1 = {
+const object1 = {
   name: "Yosemite Valley",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
 };
 
-let object2 = {
+const object2 = {
   name: "Lake Louise",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
 };
 
-let object3 = {
+const object3 = {
   name: "Bald Mountains",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
 };
 
-let object4 = {
+const object4 = {
   name: "Latemar",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
 };
 
-let object5 = {
+const object5 = {
   name: "Vanoise National Park",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
 };
 
-let object6 = {
+const object6 = {
   name: "Lago di Braies",
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
 };
@@ -48,7 +48,7 @@ const editButton = document.querySelector(".profile__edit-button");
 
 const modal = document.querySelector(".modal");
 
-const modalButton = document.querySelector("#submit");
+const modalButton = modal.querySelector(".modal__profile");
 
 const cardTemplate = document.querySelector("#card-template").content;
 
@@ -63,14 +63,14 @@ function processModal(event) {
   profileDescription.textContent = inputDescription.value;
 }
 
-function toggleForm() {
+function openModal() {
   inputTitle.value = profileTitle.textContent;
   inputDescription.value = profileDescription.textContent;
-  modal.classList.toggle("modal__open");
+  modal.classList.toggle("modal_open");
 }
 
 function getCardElement(data) {
-  cardElement = cardTemplate.cloneNode(true);
+  const cardElement = cardTemplate.cloneNode(true);
   const cardImage = cardElement.querySelector(".card__image");
   const cardText = cardElement.querySelector(".card__text");
 
@@ -81,34 +81,27 @@ function getCardElement(data) {
   return cardElement;
 }
 
-function saveModal(event) {
-  event.preventDefault();
-  profileTitle.textContent = inputTitle.value;
-  profileDescription.textContent = inputDescription.value;
-
-  modal.classList.toggle("modal__open");
-}
-
 initialCards.forEach((data) => {
   const cardElement = getCardElement(data);
   cardList.prepend(cardElement);
 });
 
-const openModal = function () {
-  modal.classList.add("modal__open");
+const closeModal = function () {
+  modal.classList.remove("modal_open");
 };
 
-const closeModal = function () {
-  modal.classList.remove("modal__open");
-};
+function saveModal(event) {
+  event.preventDefault();
+  profileTitle.textContent = inputTitle.value;
+  profileDescription.textContent = inputDescription.value;
+  closeModal();
+}
 
 // EVENT LISTENERS      //
 //                      //
-editButton.addEventListener("click", toggleForm, true);
-
-modalButton.addEventListener("click", saveModal);
-
 editButton.addEventListener("click", openModal);
+
+modalButton.addEventListener("submit", saveModal);
 
 closeButton.addEventListener("click", closeModal);
 
