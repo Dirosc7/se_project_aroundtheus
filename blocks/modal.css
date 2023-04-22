@@ -33,7 +33,7 @@
   padding-bottom: 20px;
 }
 
-.modal__open {
+.modal_open {
   display: flex;
 }
 
@@ -151,5 +151,6 @@
 
   .modal__button {
     width: 238px;
+    font-size: 14px;
   }
 }
