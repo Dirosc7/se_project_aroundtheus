@@ -72,17 +72,77 @@
             </div>
             <p class="profile__description">Explorer</p>
           </div>
-          <button class="profile__add-button" type="button"></button>
+          <button
+            id="addButton"
+            class="profile__add-button"
+            type="button"
+          ></button>
+
+          <div id="addModal" class="modal">
+            <div class="modal__container">
+              <button class="modal__close"></button>
+              <h2 class="modal__title">New Place</h2>
+              <form class="modal__profile">
+                <fieldset class="modal__profile-fieldset">
+                  <input
+                    class="modal__input"
+                    type="text"
+                    id="Place"
+                    placeholder="Title"
+                    required
+                  />
+
+                  <input
+                    class="modal__input"
+                    type="text"
+                    id="Image"
+                    placeholder="Image URL"
+                    required
+                  />
+
+                  <fieldset class="modal__button-fieldset">
+                    <input
+                      class="modal__button"
+                      type="submit"
+                      id="ModalAddButton"
+                      value="Save"
+                    />
+                  </fieldset>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div id="picturemodal" class="modal">
+            <div class="modal__container-picture">
+              <button class="modal__close-picture"></button>
+              <img
+                id="ModalImage"
+                src="#CardImage"
+                alt=""
+                class="modal__image"
+              />
+              <h2 class="modal__picture-title"></h2>
+            </div>
+          </div>
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
-                <img alt="" class="card__image" />
+                <button
+                  id="DeleteButton"
+                  class="card__delete-button"
+                  type="button"
+                ></button>
+                <img id="CardImage" alt="" class="card__image" />
 
                 <div class="card__description">
                   <h2 class="card__text"></h2>
-                  <button class="card__like-button" type="button"></button>
+                  <button
+                    id="LikeButton"
+                    class="card__like-button"
+                    type="button"
+                  ></button>
                 </div>
               </li>
             </template>
