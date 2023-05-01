@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card__image {
@@ -54,6 +55,25 @@
 
 .card__like-button:hover {
   opacity: 50%;
+}
+
+.card__like-button_clicked {
+  background: url(../Images/Icons/DarkHeart.svg);
+}
+
+.card__delete-button {
+  position: absolute;
+  background: transparent url(../Images/Icons/DeleteWhite.svg) center no-repeat;
+  width: 18px;
+  height: 19px;
+  border: none;
+  z-index: 0;
+  top: 18px;
+  left: 249px;
+}
+
+.card__delete-button:hover {
+  opacity: 60%;
 }
 
 @media screen and (max-width: 480px) {
