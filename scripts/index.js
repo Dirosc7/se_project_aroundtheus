@@ -191,7 +191,7 @@ initialCards.forEach((data) => {
 // MODAL FORM RESET FUNCTION //
 
 function clearForm() {
-  var element = document.getElementById("ModalForm2");
+  const element = document.getElementById("ModalForm2");
   element.reset();
 }
 
