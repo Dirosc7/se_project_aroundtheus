@@ -190,11 +190,6 @@ initialCards.forEach((data) => {
 
 // MODAL FORM RESET FUNCTION //
 
-function clearForm() {
-  const element = document.getElementById("ModalForm2");
-  element.reset();
-}
-
 // EVENT LISTENERS      //
 //                      //
 
@@ -224,3 +219,8 @@ editProfileButton.addEventListener("click", handleProfileFormInput);
 
 closeAddModalButton.addEventListener("click", newFunction);
 addCardModalSaveButton.addEventListener("submit", newFunction);
+
+function newFunction() {
+  const element = document.getElementById("ModalForm2");
+  element.reset();
+}
