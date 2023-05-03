@@ -7,7 +7,7 @@
 .card__image {
   height: 282px;
   width: 282px;
-
+  cursor: pointer;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -51,6 +51,7 @@
   line-height: 29px;
   align-self: center;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .card__like-button:hover {
@@ -67,13 +68,15 @@
   width: 18px;
   height: 19px;
   border: none;
-  z-index: 0;
+  z-index: 1;
   top: 18px;
   left: 249px;
+  cursor: pointer;
 }
 
 .card__delete-button:hover {
   opacity: 60%;
+  transition: 0.25s;
 }
 
 @media screen and (max-width: 480px) {
