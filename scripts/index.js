@@ -74,7 +74,6 @@ const inputCardImage = document.querySelector("#Image");
 
 const addCardModalSaveButton = addCardModal.querySelector(".modal__profile");
 
-
 // PICTURE MODAL //
 const pictureModal = document.querySelector("#picturemodal");
 
@@ -92,9 +91,10 @@ function handleProfileFormSubmit(event) {
   profileDescription.textContent = inputDescription.value;
 }
 
-function handleProfileFormInput() {
+function openProfileForm() {
   inputTitle.value = profileTitle.textContent;
   inputDescription.value = profileDescription.textContent;
+  modal.classlist.toggle("modal_open");
 }
 
 //SAVES NEW PROFILE  //
@@ -107,26 +107,25 @@ function saveEditModal(event) {
 
 // OPENS MODALS //
 function openModal(modal) {
-  modal.classList.toggle("modal_open");
+  modal.classList.add("modal_open");
 }
 
 // CLOSES MODALS //
 function closeModal(modal) {
-  modal.classList.toggle("modal_open");
+  modal.classList.remove("modal_open");
 }
 
 //CREATES NEW CARD//
-function addCardFormSubmit(event) {
+function submitAddCardForm(event) {
   event.preventDefault();
   const name = inputCardText.value;
   const link = inputCardImage.value;
   const cardElement = getCardElement({ name, link });
 
   closeModal(addCardModal);
-  const element = document.getElementById("ModalForm2");
+  const element = event.target;
   element.reset();
   cardList.prepend(cardElement);
-  return cardElement;
 }
 
 //CREATES CARDS FROM ARRAY //
@@ -169,8 +168,6 @@ initialCards.forEach((data) => {
 // EVENT LISTENERS      //
 //                      //
 
-editProfileButton.addEventListener("click", () => openModal(editProfileModal));
-
 addButton.addEventListener("click", () => openModal(addCardModal));
 
 modalProfileSaveButton.addEventListener("submit", saveEditModal);
@@ -181,10 +178,10 @@ closeProfileModalButton.addEventListener("click", () =>
 
 closeAddModalButton.addEventListener("click", () => closeModal(addCardModal));
 
-addCardModalSaveButton.addEventListener("submit", addCardFormSubmit);
+addCardModalSaveButton.addEventListener("submit", submitAddCardForm);
 
 closePictureModalButton.addEventListener("click", () =>
   closeModal(pictureModal)
 );
 
-editProfileButton.addEventListener("click", handleProfileFormInput);
+editProfileButton.addEventListener("click", openProfileForm);
