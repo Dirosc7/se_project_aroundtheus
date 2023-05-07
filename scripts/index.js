@@ -74,7 +74,6 @@ const inputCardImage = document.querySelector("#Image");
 
 const addCardModalSaveButton = addCardModal.querySelector(".modal__profile");
 
-const addCardFormElement = document.querySelector("#ModalForm2");
 
 // PICTURE MODAL //
 const pictureModal = document.querySelector("#picturemodal");
