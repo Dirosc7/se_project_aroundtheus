@@ -94,7 +94,7 @@ function handleProfileFormSubmit(event) {
 function openProfileForm() {
   inputTitle.value = profileTitle.textContent;
   inputDescription.value = profileDescription.textContent;
-  openModal();
+  openModal(editProfileModal);
 }
 
 //SAVES NEW PROFILE  //
