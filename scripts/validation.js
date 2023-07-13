@@ -1,8 +1,8 @@
-console.log("hello world");
+
 
 function enableValidation(config) {
   console.log(config);
-};
+}
 
 const config = {
   formSelector: ".popup__form",
