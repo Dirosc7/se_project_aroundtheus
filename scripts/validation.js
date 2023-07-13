@@ -1,4 +1,4 @@
-console.log("hello world");
+console.log("hello");
 
 function enableValidation() {
   console.log(config);
