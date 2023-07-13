@@ -1,7 +1,7 @@
 console.log("hello world");
 
-function enableValidation(options) {
-  console.log(options);
+function enableValidation(config) {
+  console.log(config);
 }
 
 const config = {
