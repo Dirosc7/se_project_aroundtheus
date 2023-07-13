@@ -1,6 +1,6 @@
+console.log("hello world");
 
-
-function enableValidation(options) {
+/*function enableValidation(options) {
   console.log(options);
 }
 
@@ -14,4 +14,4 @@ const config = {
 };
 
   
-enableValidation(config); 
+enableValidation(config); */
