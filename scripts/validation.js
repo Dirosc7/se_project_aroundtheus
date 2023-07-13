@@ -2,6 +2,7 @@ console.log("hello");
 
 function enableValidation(config) {
   console.log(config);
+  const formElements = Array.from(document.querySelectorAll('form'));
 }
 
 const config = {
