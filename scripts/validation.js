@@ -1,6 +1,6 @@
 console.log("hello world");
 
-function enableValidation(config) {
+function enableValidation() {
   console.log(config);
 }
 
