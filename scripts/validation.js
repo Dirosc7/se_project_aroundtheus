@@ -1,4 +1,4 @@
-console.log("hello world");
+
 
 /*function enableValidation(options) {
   console.log(options);
