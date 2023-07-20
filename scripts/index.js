@@ -184,4 +184,23 @@ closePictureModalButton.addEventListener("click", () =>
   closeModal(pictureModal)
 );
 
+// CLOSE MODAL OUTSIDE //
+//                      //
+window.addEventListener("keydown", keyHandler);
+
+function keyHandler(event) {
+  if (event.key === "Escape") {
+    let modal = document.querySelector(".modal_open");
+    closeModal(modal);
+  }
+}
+
+window.onclick = function (event) {
+  var images_modal = document.querySelector(".modal_open");
+
+  if (event.target == images_modal) {
+    closeModal(images_modal);
+    console.log("help");
+  }
+};
 editProfileButton.addEventListener("click", openProfileForm);
