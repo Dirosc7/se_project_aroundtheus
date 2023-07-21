@@ -60,7 +60,7 @@ const enableValidation = () => {
       evt.preventDefault();
     });
 
-    const fieldsetist = Array.from(
+    const fieldsetList = Array.from(
       formElement.querySelectorAll(".modal__profile-fieldset")
     );
   });
