@@ -204,3 +204,5 @@ window.onclick = function (event) {
   }
 };
 editProfileButton.addEventListener("click", openProfileForm);
+
+console.log("hello again");
