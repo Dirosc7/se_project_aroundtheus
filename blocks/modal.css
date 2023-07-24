@@ -214,4 +214,37 @@
     width: 238px;
     font-size: 14px;
   }
+.modal__buton_inactive {
+  background-color: #ffffff;
+  color: #000000;
+  opacity: 0.2;
+  border: 1px solid #000000;
+}
+
+.modal__span {
+  height: 12px;
+  width: 358px;
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+  margin-left: 36px;
+}
+
+.modal__input_type_error {
+  color: #ff0000;
+  width: 358px;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  border-color: #ff0000;
+  width: 358px;
+}
+
+.modal__input-error_active {
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color:#ff0000;
 }
