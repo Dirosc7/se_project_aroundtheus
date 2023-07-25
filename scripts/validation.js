@@ -1,4 +1,4 @@
-console.log("hello");
+
 
 function showInputError (formElement, inputElement, errorMessage) {
   const errorElement = formElement.querySelectorAll(".modal__input-error_active");
