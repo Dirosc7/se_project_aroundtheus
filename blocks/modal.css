@@ -177,7 +177,7 @@
     margin: 123px auto;
     height: 322px;
     width: 282px;
-  }}
+  }
 
   .modal__title {
     font-size: 18px;
@@ -213,7 +213,9 @@
   .modal__button {
     width: 238px;
     font-size: 14px;
-  }
+  }}
+
+
 .modal__buton_inactive {
   background-color: #ffffff;
   color: #000000;
