@@ -126,6 +126,8 @@ function submitAddCardForm(event) {
   const element = event.target;
   element.reset();
   cardList.prepend(cardElement);
+
+  toggleButtonState;
 }
 
 //CREATES CARDS FROM ARRAY //
