@@ -188,13 +188,17 @@ closePictureModalButton.addEventListener("click", () =>
 
 // CLOSE MODAL OUTSIDE //
 //                      //
-window.addEventListener("keydown", keyHandler);
+document.addEventListener("keydown", handleKeyDown);
 
-function keyHandler(event) {
+function handleKeyDown(event) {
   if (event.key === "Escape") {
-    let modal = document.querySelector(".modal_open");
+    const modal = document.querySelector(".modal_open");
     closeModal(modal);
   }
+}
+
+function closeModal(modal) {
+  document.removeEventListener("keydown", handleKeyDown);
 }
 
 window.onclick = function (event) {
@@ -202,7 +206,6 @@ window.onclick = function (event) {
 
   if (event.target == images_modal) {
     closeModal(images_modal);
-    console.log("help");
   }
 };
 editProfileButton.addEventListener("click", openProfileForm);
