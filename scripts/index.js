@@ -201,7 +201,7 @@ function closeModal(modal) {
   document.removeEventListener("keydown", handleKeyDown);
 }
 
-window.onclick = function (event) {
+window.mousedown = function (event) {
   var images_modal = document.querySelector(".modal_open");
 
   if (event.target == images_modal) {
