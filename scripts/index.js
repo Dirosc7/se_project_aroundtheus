@@ -202,10 +202,23 @@ function closeModal(modal) {
 }
 
 window.mousedown = function (event) {
-  var images_modal = document.querySelector(".modal_open");
+  const modal = document.querySelector(".modal_open");
 
-  if (event.target == images_modal) {
-    closeModal(images_modal);
+
+function closeModalOnRemoteClick(evt) {
+  // target is the element on which the event happened
+  // currentTarget is the popup
+  // if they are the same then we should close the popup
+  if (evt.target === evt.currentTarget) { 
+    closeModal(evt.target)
+  }
+}
+
+// when open a modal  in openModal function
+modal.addEventListener("mousedown", closeModalOnRemoteClick)
+
+// when close a modal  in closeModal function
+modal.removeEventListener("mousedown", closeModalOnRemoteClick)
   }
 };
 editProfileButton.addEventListener("click", openProfileForm);
