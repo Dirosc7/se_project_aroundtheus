@@ -204,23 +204,6 @@ function closeModal(modal) {
 window.mousedown = function (event) {
   const modal = document.querySelector(".modal_open");
 
-
-function closeModalOnRemoteClick(evt) {
-  // target is the element on which the event happened
-  // currentTarget is the popup
-  // if they are the same then we should close the popup
-  if (evt.target === evt.currentTarget) { 
-    closeModal(evt.target)
-  }
-}
-
-// when open a modal  in openModal function
-modal.addEventListener("mousedown", closeModalOnRemoteClick)
-
-// when close a modal  in closeModal function
-modal.removeEventListener("mousedown", closeModalOnRemoteClick)
-  }
-};
 editProfileButton.addEventListener("click", openProfileForm);
 
 
