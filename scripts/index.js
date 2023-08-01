@@ -198,9 +198,9 @@ function handleKeyDown(event) {
 }
 
 
-window.mousedown = function (event) {
-  const modal = document.querySelector(".modal_open");
-  closeModal(modal);
+document.mousedown = function (event) {
+  const modals = document.querySelector(".modal_open");
+  closeModal(modals);
 }
 
 editProfileButton.addEventListener("click", openProfileForm);
