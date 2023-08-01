@@ -197,12 +197,10 @@ function handleKeyDown(event) {
   }
 }
 
-function closeModal(modal) {
-  document.removeEventListener("keydown", handleKeyDown);
-}
 
 window.mousedown = function (event) {
   const modal = document.querySelector(".modal_open");
+}
 
 editProfileButton.addEventListener("click", openProfileForm);
 
