@@ -77,7 +77,7 @@ const enableValidation = () => {
   });
 };
 
-const configObjects = {
+const validationObjects = {
   formElement: ".modal__profile",
   inputElement: ".modal__input",
   buttonElement: ".modal__button",
@@ -88,4 +88,4 @@ const configObjects = {
 
 
 
-enableValidation(configObjects);
+enableValidation(validationObjects);
