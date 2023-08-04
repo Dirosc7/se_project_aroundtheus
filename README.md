@@ -1,6 +1,6 @@
 #  Around The U.S.
 
-#  Continuing to build functionality on the interactive "Around The U.S." The page provides an interface where users can add, remove, or like photos.
+#  Continuing to build functionality on the interactive "Around The U.S." The page provides an interface where users can add, remove, or like photos.  Pop up windows now require valid input to be saved with error messages.
 
 #  Functionality and Technologies demonstrated
 
