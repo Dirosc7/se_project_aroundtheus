@@ -108,11 +108,15 @@ function saveEditModal(event) {
 // OPENS MODALS //
 function openModal(modal) {
   modal.classList.add("modal_open");
+  document.addEventListener("keydown", handleKeyDown);
+  modal.addEventListener("mousedown", handleModalClose);
 }
 
 // CLOSES MODALS //
 function closeModal(modal) {
   modal.classList.remove("modal_open");
+  document.removeEventListener("keydown", handleKeyDown);
+  modal.removeEventListener("mousedown", handleModalClose);
 }
 
 //CREATES NEW CARD//
@@ -126,8 +130,6 @@ function submitAddCardForm(event) {
   const element = event.target;
   element.reset();
   cardList.prepend(cardElement);
-
-  toggleButtonState;
 }
 
 //CREATES CARDS FROM ARRAY //
@@ -186,24 +188,21 @@ closePictureModalButton.addEventListener("click", () =>
   closeModal(pictureModal)
 );
 
+editProfileButton.addEventListener("click", openProfileForm);
+
 // CLOSE MODAL OUTSIDE //
 //                      //
-document.addEventListener("keydown", handleKeyDown);
 
 function handleKeyDown(event) {
   if (event.key === "Escape") {
     const modal = document.querySelector(".modal_open");
     closeModal(modal);
   }
-}
+};
 
 
-document.onclick = function (event) {
-  const modals = document.querySelector(".modal_open");
-  if (event.target == modals) {
-  closeModal(modals);
-}}
-
-editProfileButton.addEventListener("click", openProfileForm);
-
+function handleModalClose(evt) {
+  if (evt.target == evt.currentTarget) {
+    closeModal(evt.target);}
+};
 
