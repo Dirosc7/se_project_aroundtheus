@@ -48,16 +48,20 @@
                       id="Name"
                       placeholder="Name"
                       required
+                      minlength="2"
+                      maxlength="40"
                     />
-
+                    <span class="modal__span modal__input-error_active" id="Name-error"></span>
                     <input
                       class="modal__input"
                       type="text"
                       id="AboutMe"
                       placeholder="Description"
                       required
+                      minlength="2"
+                      maxlength="200"
                     />
-
+                    <span class="modal__span modal__input-error_active"  id="AboutMe-error"></span>
                     <fieldset class="modal__button-fieldset">
                       <input
                         class="modal__button"
@@ -90,8 +94,10 @@
                     id="Place"
                     placeholder="Title"
                     required
+                    minlength="1"
+                    maxlength="30"
                   />
-
+                  <span class="modal__span modal__input-error_active"  id="Place-error"></span>
                   <input
                     class="modal__input"
                     type="URL"
@@ -99,7 +105,7 @@
                     placeholder="Image URL"
                     required
                   />
-
+                  <span class="modal__span modal__input-error_active"  id="Image-error"></span>
                   <fieldset class="modal__button-fieldset">
                     <input
                       class="modal__button"
@@ -157,3 +163,4 @@
     <script src="./scripts/validation.js" defer></script>
   </body>
 </html>
+
