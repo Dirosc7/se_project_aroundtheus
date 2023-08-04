@@ -86,7 +86,7 @@
   flex-direction: column;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 48px;
+  padding-top: 14px;
 }
 
 .modal__input {
@@ -131,6 +131,10 @@
 .modal__button:hover {
   opacity: 70%;
   transition-duration: 0.4s;
+}
+
+.modal__button_disabled:hover { 
+  opacity: 0.2;
 }
 
 .modal__container-picture {
@@ -213,8 +217,8 @@
   .modal__button {
     width: 238px;
     font-size: 14px;
-  }}
-
+  }
+}
 
 .modal__button_inactive {
   background-color: #ffffff;
@@ -224,6 +228,10 @@
   cursor: default;
 }
 
+.modal__button:hover:not(:disabled) { 
+  opacity: 0.7;
+}
+
 .modal__span {
   height: 12px;
   width: 358px;
@@ -231,6 +239,7 @@
   display: flex;
   position: relative;
   margin-left: 36px;
+  
 }
 
 .modal__input_type_error {
@@ -241,6 +250,7 @@
   font-style: normal;
   font-size: 14px;
   border-color: #ff0000;
+  width: 358px;
 }
 
 .modal__input-error_active {
