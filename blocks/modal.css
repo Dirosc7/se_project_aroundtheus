@@ -133,10 +133,6 @@
   transition-duration: 0.4s;
 }
 
-.modal__button_disabled:hover { 
-  opacity: 0.2;
-}
-
 .modal__container-picture {
   margin: auto;
   position: relative;
@@ -228,8 +224,8 @@
   cursor: default;
 }
 
-.modal__button:hover:not(:disabled) { 
-  opacity: 0.7;
+.modal__button_inactive:hover {
+  opacity: 1;
 }
 
 .modal__span {
