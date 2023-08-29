@@ -220,7 +220,7 @@ editProfileValidator.enableValidation();
 const editImageValidator = new FormValidator(validationObjects, addCardModal)
 editImageValidator.enableValidation();
 
-function renderElement(elementData) {
+/*function renderElement(elementData) {
   //const card = new Card(elementData, "#element-template", handleImageClick)
   const card = new Card(elementData, "#element-template", elementImageModal, openModal)
   console.log("something something !! ")
@@ -238,4 +238,4 @@ function handleElementImageModal(evt) {
   };
   renderElement(elementData);
   closeModal(elementAddModal);
-}
+}*/
