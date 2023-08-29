@@ -1,3 +1,5 @@
+import Card from '../components/card.js';
+import FormValidator from '../components/formvalidator.js';
 // ARRAY  //
 //        //
 const object1 = {
