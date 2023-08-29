@@ -206,4 +206,36 @@ function handleModalClose(evt) {
     closeModal(evt.target);}
 };
 
+const validationObjects = {
+  formElement: ".modal__profile",
+  inputElement: ".modal__input",
+  buttonElement: ".modal__button",
+  inactiveButtonState: "modal__button_inactive",
+  hideInputError: "modal__input_type_error",
+  errorElement: "modal__input-error_active",
+};
+const editProfileValidator = new FormValidator(validationObjects, editProfileModal);
+editProfileValidator.enableValidation();
 
+const editImageValidator = new FormValidator(validationObjects, addCardModal)
+editImageValidator.enableValidation();
+
+function renderElement(elementData) {
+  //const card = new Card(elementData, "#element-template", handleImageClick)
+  const card = new Card(elementData, "#element-template", elementImageModal, openModal)
+  console.log("something something !! ")
+  const cardElement = card.generateCard();
+  elementSection.prependItem(cardElement);
+}
+function handleElementImageModal(evt) {
+  evt.preventDefault();
+  editImageValidator.resetValidation();
+  const name = elNameInput.value;
+  const url = elUrlInput.value;
+  const elementData = {
+    name: name,
+    url: url,
+  };
+  renderElement(elementData);
+  closeModal(elementAddModal);
+}
