@@ -107,70 +107,33 @@ function saveEditModal(event) {
   closeModal(editProfileModal);
 }
 
-// OPENS MODALS //
-function openModal(modal) {
-  modal.classList.add("modal_open");
-  document.addEventListener("keydown", handleKeyDown);
-  modal.addEventListener("mousedown", handleModalClose);
-}
-
-// CLOSES MODALS //
-function closeModal(modal) {
-  modal.classList.remove("modal_open");
-  document.removeEventListener("keydown", handleKeyDown);
-  modal.removeEventListener("mousedown", handleModalClose);
-}
-
 //CREATES NEW CARD//
 function submitAddCardForm(event) {
   event.preventDefault();
   const name = inputCardText.value;
   const link = inputCardImage.value;
   const cardElement = getCardElement({ name, link });
+  
 
   closeModal(addCardModal);
   const element = event.target;
   element.reset();
   cardList.prepend(cardElement);
+  
 }
 
 //CREATES CARDS FROM ARRAY //
-function getCardElement(data) {
-  const cardElement = cardTemplate.cloneNode(true).querySelector(".card");
-  const cardImage = cardElement.querySelector(".card__image");
-  const cardText = cardElement.querySelector(".card__text");
-  const likeButton = cardElement.querySelector(".card__like-button");
-  const deleteButton = cardElement.querySelector(".card__delete-button");
+ function getCardElement({name,link}) {
+  const card = new Card({name,link}, cardTemplate, pictureModal, openModal)
+  return card;
+ }
 
-  likeButton.addEventListener("click", () => {
-    likeButton.classList.toggle("card__like-button_clicked");
-  });
+  initialCards.forEach(({name,link}) => {
+  const cardElement = getCardElement({name,link});
+  
+  cardList.prepend(cardElement);});
 
-  deleteButton.addEventListener("click", () => {
-    cardElement.remove();
-  });
-
-  cardText.textContent = data.name;
-  cardImage.src = data.link;
-  cardImage.alt = data.name;
-
-  cardImage.addEventListener("click", () => {
-    const modalImage = document.querySelector("#ModalImage");
-    const modalTitle = document.querySelector(".modal__picture-title");
-    modalImage.src = cardImage.src;
-    modalTitle.textContent = cardText.textContent;
-    modalImage.alt = "Photo of " + modalTitle.textContent;
-    openModal(pictureModal);
-  });
-
-  return cardElement;
-}
-
-initialCards.forEach((data) => {
-  const cardElement = getCardElement(data);
-  cardList.prepend(cardElement);
-});
-
+ 
 // EVENT LISTENERS      //
 //                      //
 
