@@ -1,8 +1,7 @@
 
 class Card {
-  constructor(data, cardTemplate, pictureModal, openModal) {
-    //constructor(data, templateSelector, elementImageModal)
-    this._data = data;
+  constructor({name, link}, cardTemplate, pictureModal, openModal) {
+    this._data = {name, link};
     this._cardTemplate = cardTemplate;
     this._openModal = openModal;
     this._pictureModal = pictureModal;
