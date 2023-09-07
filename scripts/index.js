@@ -185,22 +185,3 @@ editProfileValidator.enableValidation();
 const editImageValidator = new FormValidator(validationObjects, addCardModal)
 editImageValidator.enableValidation();
 
-/*function renderElement(elementData) {
-  //const card = new Card(elementData, "#element-template", handleImageClick)
-  const card = new Card(elementData, "#element-template", elementImageModal, openModal)
-  console.log("something something !! ")
-  const cardElement = card.generateCard();
-  elementSection.prependItem(cardElement);
-}
-function handleElementImageModal(evt) {
-  evt.preventDefault();
-  editImageValidator.resetValidation();
-  const name = elNameInput.value;
-  const url = elUrlInput.value;
-  const elementData = {
-    name: name,
-    url: url,
-  };
-  renderElement(elementData);
-  closeModal(elementAddModal);
-}*/
