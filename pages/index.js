@@ -1,6 +1,6 @@
 import Card from '../components/Card.js';
 import FormValidator from '../components/FormValidator.js';
-import {openModal, closeModal, handleModalClose, handleKeyDown} from "../utils/utils.js";
+import { openModal, closeModal, handleModalClose, handleKeyDown } from "../utils/utils.js";
 
 // ARRAY  //
 //        //
@@ -130,8 +130,8 @@ function submitAddCardForm(event) {
   return card;
  }
 
-  initialCards.forEach(({name,link}) => {
-  const cardElement = getCardElement({name,link});
+  initialCards.forEach(card) => {
+  const cardElement = getCardElement(card);
   
   cardList.prepend(cardElement);});
 
@@ -157,21 +157,7 @@ closePictureModalButton.addEventListener("click", () =>
 
 editProfileButton.addEventListener("click", openProfileForm);
 
-/*// CLOSE MODAL OUTSIDE //
-//                      //
 
-function handleKeyDown(event) {
-  if (event.key === "Escape") {
-    const modal = document.querySelector(".modal_open");
-    closeModal(modal);
-  }
-};
-
-
-function handleModalClose(evt) {
-  if (evt.target == evt.currentTarget) {
-    closeModal(evt.target);}
-};*/
 
 const validationObjects = {
   formElement: ".modal__profile",
