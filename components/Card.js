@@ -44,7 +44,6 @@ class Card {
     modalImage.src = imageUrl;
     modalImage.alt = imageCaption;
     modalTitle.textContent = imageCaption;
-    elementImageModal.classList.add("modal_opened");
     this._openModal(this.pictureModal);
   }
 
