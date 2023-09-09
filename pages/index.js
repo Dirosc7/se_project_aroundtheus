@@ -157,7 +157,7 @@ closePictureModalButton.addEventListener("click", () =>
 
 editProfileButton.addEventListener("click", openProfileForm);
 
-// CLOSE MODAL OUTSIDE //
+/*// CLOSE MODAL OUTSIDE //
 //                      //
 
 function handleKeyDown(event) {
@@ -171,7 +171,7 @@ function handleKeyDown(event) {
 function handleModalClose(evt) {
   if (evt.target == evt.currentTarget) {
     closeModal(evt.target);}
-};
+};*/
 
 const validationObjects = {
   formElement: ".modal__profile",
