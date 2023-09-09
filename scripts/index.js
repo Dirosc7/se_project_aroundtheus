@@ -1,5 +1,6 @@
 import Card from '../components/Card.js';
 import FormValidator from '../components/FormValidator.js';
+import {openModal, closeModal, handleModalClose, handleKeyDown} from "../utils/utils.js";
 // ARRAY  //
 //        //
 const object1 = {
