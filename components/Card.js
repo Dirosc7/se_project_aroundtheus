@@ -26,7 +26,10 @@ class Card {
 
   _handleDeleteButton(evt) {
     const cardElement = evt.target.closest('.element');
-    cardElement.remove();
+    this._cardElement = null;
+    constructor() {
+  this._handleDeleteButton = this._handleDeleteButton.bind(this);
+}
   }
 
   _handleImageClick() {
