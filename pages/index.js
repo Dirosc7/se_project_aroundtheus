@@ -132,7 +132,6 @@ function submitAddCardForm(event) {
 
   initialCards.forEach((card) => {
   const cardElement = getCardElement(card);
-  
   cardList.prepend(cardElement);});
 
  
