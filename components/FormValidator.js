@@ -49,7 +49,7 @@ class FormValidator {
     }
   }
 
-  _setEventListeners() {
+  _setEventListeners(inputElement) {
     this._inputList.forEach((inputElement) => {
       inputElement.addEventListener("input", () => {
         this._checkInputValidity(inputElement);
