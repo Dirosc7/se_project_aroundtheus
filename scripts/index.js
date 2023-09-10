@@ -125,16 +125,14 @@ function submitAddCardForm(event) {
 }
 
 //CREATES CARDS FROM ARRAY //
- function getCardElement({name,link}) {
-  const card = new Card({name,link}, cardTemplate, pictureModal, openModal)
-  return card;
+ function getCardElement({name, link}) {
+  const card = new Card({name,link}, cardTemplate, openModal)
+  return card.generateCard;
  }
 
   initialCards.forEach(({name,link}) => {
   const cardElement = getCardElement({name,link});
-  
   cardList.prepend(cardElement);});
-
  
 // EVENT LISTENERS      //
 //                      //
