@@ -1,12 +1,12 @@
 // OPENS MODALS //
-function openModal(modal) {
+export function openModal(modal) {
     modal.classList.add("modal_open");
     document.addEventListener("keydown", handleKeyDown);
     modal.addEventListener("mousedown", handleModalClose);
   }
   
   // CLOSES MODALS //
-  function closeModal(modal) {
+  export function closeModal(modal) {
     modal.classList.remove("modal_open");
     document.removeEventListener("keydown", handleKeyDown);
     modal.removeEventListener("mousedown", handleModalClose);
@@ -36,14 +36,14 @@ editProfileButton.addEventListener("click", openProfileForm);*/
 // CLOSE MODAL OUTSIDE //
 //                      //
 
-function handleKeyDown(event) {
+export function handleKeyDown(event) {
   if (event.key === "Escape") {
     const modal = document.querySelector(".modal_open");
     closeModal(modal);
   }
 };
 
-function handleModalClose(evt) {
+export function handleModalClose(evt) {
     if (evt.target == evt.currentTarget) {
       closeModal(evt.target);}
   };
