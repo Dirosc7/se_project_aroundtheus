@@ -6,7 +6,7 @@ export function openModal(modal) {
   }
   
   // CLOSES MODALS //
-  export function closeModal(modal) {
+export function closeModal(modal) {
     modal.classList.remove("modal_open");
     document.removeEventListener("keydown", handleKeyDown);
     modal.removeEventListener("mousedown", handleModalClose);
