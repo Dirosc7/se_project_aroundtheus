@@ -8,33 +8,34 @@ class FormValidator {
     this._errorElement = validationObjects.errorElement;
     this._formList = Array.from(this._formElement.querySelectorAll(this._inputElement));
     this._buttonElement = this._formElement.querySelector(this._buttonElement);
+    
   }
+  
 
   _showInputError(inputElement, errorMessage) {
     const errorElement = this._formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.add(this._hideInputError);
-    console.log(errorMessage);
     errorElement.textContent = errorMessage;
     errorElement.classList.add(this._errorElement);
   }
 
-  _hideInputError(inputElement) {
+  _hideInputErrors(inputElement) {
     const errorElement = this._formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.remove(this._hideInputError);
     errorElement.classList.remove(this._errorElement);
-    errorElement.textContent = "";
+    errorElement.textContent = " ";
   }
 
-  _checkInputValidity(inputElement) {
+  _checkInputValidity(formElement,inputElement, validationObjects) {
     if (!inputElement.validity.valid) {
-      this._showInputError(inputElement, inputElement.validationMessage);
+      this._showInputError(formElement,inputElement, inputElement.validationMessage, validationObjects);
     } else {
-      this._hideInputError(inputElement);
+      this._hideInputErrors(inputElement);
     }
   }
 
   _hasInvalidInput() {
-    return this._inputList.some((inputElement) => {
+    return this._formList.some((inputElement) => {
       return !inputElement.validity.valid;
     });
   }
@@ -49,11 +50,11 @@ class FormValidator {
     }
   }
 
-  _setEventListeners(inputElement) {
-    this._inputList.forEach((inputElement) => {
+  _setEventListeners() {
+    this._formList.forEach((inputElement) => {
       inputElement.addEventListener("input", () => {
-        this._checkInputValidity(inputElement);
-        this._toggleButtonState(inputList, buttonElement);
+        this._checkInputValidity(this._formElement, inputElement);
+        this._toggleButtonState(this._formList, this._buttonElement);
       });
     });
   }
