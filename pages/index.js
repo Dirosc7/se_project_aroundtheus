@@ -38,6 +38,9 @@ const object6 = {
 //            //
 
 
+
+
+
 // CARDS //
 const initialCards = [object1, object2, object3, object4, object5, object6];
 
@@ -146,11 +149,10 @@ function submitAddCardForm(event) {
   return Card;
  }
 
-initialCards.forEach((card) => {
+  initialCards.forEach((card) => {
     const cardElement = getCardElement(card)
-  
     cardList.prepend(cardElement);
-});
+  });
 
  
   
@@ -238,8 +240,11 @@ const validationObjects = {
 const editProfileValidator = new FormValidator(validationObjects, editProfileModal);
 editProfileValidator.enableValidation();
 
+
 const editImageValidator = new FormValidator(validationObjects, addCardModal)
 editImageValidator.enableValidation();
+
+editImageValidator.resetValidation();
 
 /*function getCardElement(data) {
   //const card = new Card(elementData, "#element-template", handleImageClick)
@@ -260,3 +265,4 @@ editImageValidator.enableValidation();
   renderElement(elementData);
   closeModal(elementAddModal);
 }*/
+
