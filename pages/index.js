@@ -145,10 +145,11 @@ function submitAddCardForm(event) {
   return Card;
  }
 
-    initialCards.forEach((card) => {
-      const cardElement = getCardElement(card)
+initialCards.forEach((card) => {
+    const cardElement = getCardElement(card)
   
-    cardList.prepend(cardElement);});
+    cardList.prepend(cardElement);
+});
 
  
   
