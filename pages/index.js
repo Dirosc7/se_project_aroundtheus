@@ -37,7 +37,7 @@ const object6 = {
 // ELEMENTS   //
 //            //
 
-toggleButtonState;
+_toggleButtonState;
 
 // CARDS //
 const initialCards = [object1, object2, object3, object4, object5, object6];
