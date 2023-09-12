@@ -142,7 +142,7 @@ function submitAddCardForm(event) {
  function getCardElement({name,link}) {
   const card = new Card({name,link}, cardTemplate, openModal);
   
-  return card;
+  return Card;
  }
 
   initialCards.forEach((card) => {
