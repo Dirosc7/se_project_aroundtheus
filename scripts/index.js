@@ -2,6 +2,7 @@ import Card from '../components/Card.js';
 import FormValidator from '../components/FormValidator.js';
 import {openModal, closeModal, handleModalClose, handleKeyDown} from "../utils/utils.js";
 
+
 // ARRAY  //
 //        //
 const object1 = {
@@ -37,7 +38,9 @@ const object6 = {
 // ELEMENTS   //
 //            //
 
-toggleButtonState;
+
+
+
 
 // CARDS //
 const initialCards = [object1, object2, object3, object4, object5, object6];
@@ -111,6 +114,8 @@ function saveEditModal(event) {
   closeModal(editProfileModal);
 }
 
+
+
 //CREATES NEW CARD//
 function submitAddCardForm(event) {
   event.preventDefault();
@@ -123,19 +128,24 @@ function submitAddCardForm(event) {
   const element = event.target;
   element.reset();
   cardList.prepend(cardElement);
-  toggleButtonState;
+
+ 
+  
 }
 
 //CREATES CARDS FROM ARRAY //
- function getCardElement({name, link}) {
-  const card = new Card({name,link}, cardTemplate, openModal)
-  return card.generateCard;
+ function getCardElement({name,link}) {
+  const card = new Card({name,link}, cardTemplate, openModal);
+  
+  return Card;
  }
 
-  initialCards.forEach(({name,link}) => {
-  const cardElement = getCardElement({name,link});
-  cardList.prepend(cardElement);});
- 
+  initialCards.forEach((card) => {
+    const cardElement = getCardElement(card)
+    cardList.prepend(cardElement);
+  });
+
+
 // EVENT LISTENERS      //
 //                      //
 
@@ -145,6 +155,7 @@ modalProfileSaveButton.addEventListener("submit", saveEditModal);
 
 closeProfileModalButton.addEventListener("click", () =>
   closeModal(editProfileModal)
+   
 );
 
 closeAddModalButton.addEventListener("click", () => closeModal(addCardModal));
@@ -157,23 +168,9 @@ closePictureModalButton.addEventListener("click", () =>
 
 editProfileButton.addEventListener("click", openProfileForm);
 
-// CLOSE MODAL OUTSIDE //
-//                      //
-
-function handleKeyDown(event) {
-  if (event.key === "Escape") {
-    const modal = document.querySelector(".modal_open");
-    closeModal(modal);
-  }
-};
 
 
-function handleModalClose(evt) {
-  if (evt.target == evt.currentTarget) {
-    closeModal(evt.target);}
-};
-
-const validationObjects = {
+export const validationObjects = {
   formElement: ".modal__profile",
   inputElement: ".modal__input",
   buttonElement: ".modal__button",
@@ -183,7 +180,12 @@ const validationObjects = {
 };
 const editProfileValidator = new FormValidator(validationObjects, editProfileModal);
 editProfileValidator.enableValidation();
+editProfileValidator.resetValidation();
+
 
 const editImageValidator = new FormValidator(validationObjects, addCardModal)
 editImageValidator.enableValidation();
+editImageValidator.resetValidation();
+
+
 
