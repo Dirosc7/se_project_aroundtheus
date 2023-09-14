@@ -1,10 +1,11 @@
 
+
 export default class Card {
   constructor({name,link}, cardTemplate, pictureModal, openModal) {
     
     this._name = name;
     this._link = link;
-    this._cardTemplate = cardTemplate;
+    this._cardTemplate = cardTemplate.content;
     this._openModal = openModal;
     this._pictureModal = pictureModal;
     this._handleImageClick = this._handleImageClick.bind(this);
@@ -60,6 +61,11 @@ export default class Card {
     this._setEventListeners();
 
     return this._cardElement;
+    
+  }
+  
+};
+
     
   }
   
